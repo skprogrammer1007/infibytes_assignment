@@ -1,8 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+
 export default function YourGames() {
-    const [games, setGames] = useState([])
-    useEffect(() => {
+    const [games, setGames] = React.useState([])
+   React.useEffect(() => {
         axios.get('api/url').then(response => {
             setGames(response?.data || [])
         })
