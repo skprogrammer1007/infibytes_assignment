@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 export default function LoginPage() {
+    const Login=()=>{
+        
+    }
     return (
         <section className='flex items-center justify-center flex-col font-serif'>
             <div className='pt-[30vh] '>
@@ -22,10 +25,10 @@ export default function LoginPage() {
             </div>
             <div className='mt-5 flex flex-col '>
                 <button className='border-2 border-black w-[90vw] p-3 font-bold bg-yellow-300 text-white rounded-md shadow-lg'>
-                    <Link to="/login"> Login</Link>
+                    <Link to="login"> Login</Link>
                 </button>
                 <button className='border-2 border-black w-[90vw] p-3 font-bold bg-blue-500 text-white rounded-md my-4 shadow-lg'>
-                    <Link to="/register"> Register</Link>
+                    <Link to="register"> Register</Link>
                 </button>
             </div>
         </section>

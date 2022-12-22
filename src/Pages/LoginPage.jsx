@@ -3,6 +3,9 @@ import Top from '../components/LoginSignup.Top'
 import changeValue from '../components/changeValue'
 export default function LoginPage() {
     const [state, setState] = React.useState({})
+    const Login=()=>{
+        
+    }
     return (
         <>
             <Top heading={'Login'} subHeading={'Please enter your details'}/>
@@ -18,7 +21,7 @@ export default function LoginPage() {
                     <button className='text-start text-sm border-2 border-black w-[90vw] p-3  py-4  bg-rose-500 text-white rounded-md  mt-2 shadow-lg'>
                         Enter Correct details
                     </button>
-                    <button className='border-2 border-black w-[90vw] p-3 font-bold bg-yellow-300 text-white rounded-md mt-2 shadow-lg'>
+                    <button className='border-2 border-black w-[90vw] p-3 font-bold bg-yellow-300 text-white rounded-md mt-2 shadow-lg' onClick={Login}>
                         Login 
                     </button>
                 </div>

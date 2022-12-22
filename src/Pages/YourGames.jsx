@@ -1,6 +1,13 @@
 import React from 'react'
-
+import axios from 'axios'
 export default function YourGames() {
+    const [games, setGames] = useState([])
+    useEffect(() => {
+        axios.get('api/url').then(response => {
+            setGames(response?.data || [])
+        })
+    }, [])
+
     return (
         <>
             <h2 className='text-xl font-bold mx-5'>Your Games</h2>

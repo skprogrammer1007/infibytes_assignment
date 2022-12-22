@@ -26,7 +26,7 @@ export default function RegisterPage() {
           <button className={`text-start text-sm border-2 border-black w-[90vw] p-3  py-4  bg-green-300 text-black rounded-md  mt-2 shadow-lg ${warn?'hidden':'block'}`}>
             successFull
           </button>
-          <button className={`border-2 border-black w-[90vw] p-3 font-bold bg-yellow-300 text-black rounded-md mt-2 shadow-lg `}>
+          <button className={`border-2 border-black w-[90vw] p-3 font-bold bg-yellow-300 text-black rounded-md mt-2 shadow-lg `}  onClick={submitForm}>
             Register
           </button>
         </div>
